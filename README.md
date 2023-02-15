@@ -30,7 +30,7 @@ console.log( utils.reverseString('abc'));
 | `npm run types`    | 根据 jsdoc 注释生成 d.ts 文件                            |
 | `npm run compile`  | 仅打包                                                   |
 | `npm run build`    | 生产环境，打包，生成文档，types                          |
-| `npm run publish`  | 采用 np 协助发包 npm                                     |
+| `npm run pub`  | 采用 np 协助发包 npm                                     |
 
 
 ## 注意
