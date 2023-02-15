@@ -1,0 +1,9 @@
+# 第三方模块目录
+node_modules/*
+# 打包目录
+build/*
+docs/*
+scripts/*
+tests/*
+types/*
+wiki/*

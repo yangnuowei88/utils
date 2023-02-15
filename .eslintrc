@@ -1,0 +1,30 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "extends": ["plugin:vue/essential", "eslint:recommended", "prettier"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "camelcase": "warn",
+        "no-var": "error",
+        "prefer-const": "warn",
+        "no-console": "warn",
+        "no-debugger": "error"
+    },
+    "globals": {
+        "GeoGlobe": "readonly",
+        "mapboxgl": "readonly",
+        "MapboxDraw": "readonly",
+        "turf": "readonly",
+        "Cesium": "readonly",
+        "echarts": "readonly",
+        "THREE": "readonly",
+        "ol": "readonly",
+        "d3": "readonly"
+    }
+}

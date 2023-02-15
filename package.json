@@ -1,0 +1,56 @@
+{
+    "name": "geoOnlineUtil",
+    "version": "1.0.0",
+    "description": "GeoOnline js 工具库",
+    "main": "src/index.js",
+    "author": "yang",
+    "license": "MIT",
+    "files": [
+        "build/",
+        "src/",
+        "types/",
+        "package.json",
+        "README.md",
+        "CHANGELOG.md"
+    ],
+    "scripts": {
+        "test:dev": "jest --watchAll=true --config=jest.config.js",
+        "build": "npm run clear && npm run compile && npm run jsdoc && npm run types",
+        "clear": "rm -rf types && rm -rf docs && rm -rf build",
+        "lint": "eslint  src --fix",
+        "prettier": "prettier src --write",
+        "test:all": "jest",
+        "jsdoc": "jsdoc -c jsdoc.conf.json",
+        "types": "npx -p typescript tsc src/*.js --declaration --allowJs --emitDeclarationOnly --outDir types",
+        "compile": "webpack --mode production --config ./scripts/webpack.config.js",
+        "publish": "npm run build && np --no-cleanup --any-branch"
+    },
+    "dependencies": {
+        "fecha": "^3.0.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.12",
+        "@babel/plugin-syntax-import-assertions": "^7.20.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.20.11",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.3.0",
+        "babel-plugin-dynamic-import-node": "^2.3.3",
+        "clean-jsdoc-theme": "^4.2.3",
+        "css-minify": "^2.0.0",
+        "eslint": "^6.7.2",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-vue": "^6.2.2",
+        "jest": "^29.4.1",
+        "jsdoc": "^4.0.0",
+        "np": "^7.6.3",
+        "prettier": "2.0.5",
+        "typescript": "^4.9.5",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://git.geoonline.geo/geoonline_team1/V10/geoonlineutil_front"
+    }
+}
