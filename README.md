@@ -3,19 +3,19 @@
 ### 用法
 
 ```sh
-npm i geoStarUtil
+npm i geoonlineutil
 ```
 
 or
 
 ```sh
-yarn  geoStarUtil
+yarn  geoonlineutil
 ```
 
 #### 导入项目
 
 ```js
-import utils from 'geoOnlineUtil';
+import utils from 'geoonlineutil';
 
 console.log( utils.reverseString('abc'));
 ```

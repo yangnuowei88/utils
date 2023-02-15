@@ -1,5 +1,5 @@
 {
-    "name": "geoOnlineUtil",
+    "name": "geoonlineutil",
     "version": "1.0.0",
     "description": "GeoOnline js 工具库",
     "main": "src/index.js",
@@ -23,7 +23,7 @@
         "jsdoc": "jsdoc -c jsdoc.conf.json",
         "types": "npx -p typescript tsc src/*.js --declaration --allowJs --emitDeclarationOnly --outDir types",
         "compile": "webpack --mode production --config ./scripts/webpack.config.js",
-        "publish": "npm run build && np --no-cleanup --any-branch"
+        "publish": "np --no-cleanup --any-branch"
     },
     "dependencies": {
         "fecha": "^3.0.3"
